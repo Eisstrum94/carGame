@@ -9,7 +9,9 @@ public class Driver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
     }
+
 
     // Update is called once per frame
     void Update()
@@ -17,7 +19,6 @@ public class Driver : MonoBehaviour
         float steerAmount = Input.GetAxis("Horizontal");
         float driveAmount = Input.GetAxis("Vertical");
         float boostAmount = Input.GetAxis("Jump");
-       
 
         if (boostAmount == 1) {
             boostAmount = 2;
